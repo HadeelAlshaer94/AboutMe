@@ -14,119 +14,155 @@ alert('hello there ' + userName + ' glad to have you here');
 
 let score = 0;
 
+
+
+let answer1 = '';
+function Q1(answer1) {
+    answer1 = answer1.toLowerCase();
+    if (answer1 === 'yes' || answer1 === 'y') {
+        //console.log(answer1);
+        alert('think again');
+
+
+    } else if (answer1 === 'no' || answer1 === 'n') {
+        //console.log(answer1);
+        alert('good job');
+        score++;
+    } else {
+        alert('please write yes or no');
+    }
+}
+
+let answer2 = '';
+function Q2(answer2) {
+    answer2 = answer2.toLowerCase();
+    if (answer2 === 'yes' || answer2 === 'y') {
+        //console.log(answer2);
+        alert('are you okay?');
+
+    } else if (lion === 'no' || lion === 'n') {
+        //console.log(answer2);
+        alert('wow really ');
+        score++;
+    } else {
+        alert('please write yes or no');
+    }
+}
+
+let answer3 = '';
+function Q3(answer3) {
+    answer3 = answer3.toLowerCase();
+    if (answer3 === 'yes' || answer3 === 'y') {
+        //console.log(answer3);
+        alert('good');
+        score++;
+
+    } else if (answer3 === 'no' || answer3 === 'n') {
+        //console.log(answer3);
+        alert('no no repeat my friend ');
+
+    } else {
+        alert('please write yes or no');
+    }
+}
+
+let answer4 = '';
+function Q4(answer4) {
+    answer4 = answer4.toLowerCase();
+    if (answer4 === 'yes' || answer4 === 'y') {
+        //console.log(answer4);
+        alert('good');
+        score++;
+
+    } else if (answer4 === 'no' || answer4 === 'n') {
+        //console.log(answer4);
+        alert('no no repeat my friend ');
+
+    } else {
+        alert('please write yes or no');
+    }
+
+}
+
+let answer5 = '';
+function Q5(answer5) {
+    answer5 = answer5.toLowerCase();
+    if (answer5 === 'yes' || answer5 === 'y') {
+        //console.log(answer5);
+        alert('good job');
+        score++;
+
+    } else if (answer5 === 'no' || answer5 === 'n') {
+        //console.log(answer5);
+        alert('no no repeat my friend ');
+
+    } else {
+        alert('please write yes or no');
+    }
+}
+
+let answer6 = '';
+function Q6(answer6) {
+    answer6 = answer6.toLowerCase();
+    if (answer6 === 'yes' || answer6 === 'y') {
+        //console.log(answer6);
+        alert('good job');
+        score++;
+
+    } else if (answer6 === 'no' || answer6 === 'n') {
+        //console.log(answer6);
+        alert('no no repeat my friend');
+
+    } else {
+        alert('please write yes or no');
+    }
+}
+
+let answer7 = '';
+function Q7(answer7) {
+    answer7 = answer7.toLowerCase();
+    if (answer7 === 'yes' || answer7 === 'y') {
+        //console.log(answer7);
+        alert('good job my friend');
+        score++;
+
+    } else if (answer7 === 'no' || answer7 === 'n') {
+        //console.log(answer7);
+        alert('no no repeat my friend ');
+
+    } else {
+        alert('please write yes or no');
+    }
+
+}
+
+
+//Call Q1
 let human = prompt('am i a human?');
-human = human.toLowerCase();
-if (human === 'yes' || human === 'y') {
-    //console.log(human);
-    alert('think again');
+Q1(human);
 
-
-} else if (human === 'no' || human === 'n') {
-    //console.log(human);
-    alert('good job');
-    score++;
-} else {
-    alert('please write yes or no');
-}
-
-
+//Call Q2
 let lion = prompt('do lions fly?');
-lion = lion.toLowerCase();
-if (lion === 'yes' || lion === 'y') {
-    //console.log(lion);
-    alert('are you okay?');
+Q2(lion);
 
-} else if (lion === 'no' || lion === 'n') {
-    //console.log(lion);
-    alert('wow really ');
-    score++;
-} else {
-    alert('please write yes or no');
-}
-
-
-
+//Call Q3
 let education = prompt('do education Computer Science?');
-education = education.toLowerCase();
-if (education === 'yes' || education === 'y') {
-    //console.log(education);
-    alert('good');
-    score++;
+Q3(education);
 
-} else if (education === 'no' || education === 'n') {
-    //console.log(education);
-    alert('no no repeat my friend ');
-
-} else {
-    alert('please write yes or no');
-}
-
-
-
+//Call Q4
 let uni = prompt('do my university Amman Arab University?');
-uni = uni.toLowerCase();
-if (uni === 'yes' || uni === 'y') {
-    //console.log(uni);
-    alert('good');
-    score++;
+Q4(uni);
 
-} else if (uni === 'no' || uni === 'n') {
-    //console.log(uni);
-    alert('no no repeat my friend ');
-
-} else {
-    alert('please write yes or no');
-}
-
-
+//Call Q5
 let prog = prompt('do I like programming?');
-prog = prog.toLowerCase();
-if (prog === 'yes' || prog === 'y') {
-    //console.log(prog);
-    alert('good job');
-    score++;
+Q5(prog);
 
-} else if (prog === 'no' || prog === 'n') {
-    //console.log(prog);
-    alert('no no repeat my friend ');
-
-} else {
-    alert('please write yes or no');
-}
-
-
+//Call Q6
 let master = prompt('do I have master degree?');
-master = master.toLowerCase();
-if (master === 'yes' || master === 'y') {
-    //console.log(master);
-    alert('good job');
-    score++;
+Q6(master);
 
-} else if (master === 'no' || master === 'n') {
-    //console.log(master);
-    alert('no no repeat my friend');
-
-} else {
-    alert('please write yes or no');
-}
-
-
-
-
+//Call Q7
 let loveprog = prompt('do I love programming?');
-loveprog = loveprog.toLowerCase();
-if (loveprog === 'yes' || loveprog === 'y') {
-    //console.log(loveprog);
-    alert('good job my friend');
-    score++;
-
-} else if (loveprog === 'no' || loveprog === 'n') {
-    //console.log(loveprog);
-    alert('no no repeat my friend ');
-
-} else {
-    alert('please write yes or no');
-}
-
+Q7(loveprog);
 
 alert(`you have a score of ${score} /7`);

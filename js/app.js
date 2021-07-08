@@ -137,6 +137,68 @@ function Q7(answer7) {
 }
 
 
+// Guess Number
+let guessAnswer = '';
+function guessGame(guessAnswer) {
+    for (let x = 0; x < 4; x++) {
+        num = prompt('Guess a number between 1-10 ?');
+        num = parseInt(num);
+
+        if (num == 5) {
+            alert('Correct!... Great Job my friend');
+            score++;
+            break;
+        }
+        else if (num > 5) {
+            alert('Try less number');
+        }
+        else if (num < 5) {
+            alert('Try more number');
+        }
+        else {
+            alert('Enter valid value');
+        }
+
+        if (x == 3) {
+            alert('Wrong answer the right answer is 5...!');
+        }
+
+    }
+}
+
+
+// place guess
+let place = '';
+function placeGuess(place) {
+    attemptsLoop:  for (let x = 0; x < 6; x++) {
+        place = prompt('What is my favorite place  ?? from (Wadi Rum, Aqaba, Italy, Bali Island, Tarabzon, Qudes, Gaza, Dead Sea, Ajlon, Amman)');
+        place = place.toLocaleLowerCase();
+        for (let j = 0; j < placeArr.length; j++) {
+            if (place == placeArr[j]) {
+                alert('Great Job..! ');
+                alert('My Places: Wadi Rum, Aqaba, Italy, Bali Island, Tarabzon, Qudes, Gaza, Dead Sea, Ajlon, Amman');
+                // console.log(placeArr);
+                scores++;
+                break attemptsLoop;
+            }
+            else {
+                alert("ERROR");
+                break;
+            }
+        }
+
+        if (x == 5) {
+            alert('Wadi Rum, Aqaba, Italy, Bali Island, Tarabzon, Qudes, Gaza, Dead Sea, Ajlon, Amman');
+        }
+    }
+}
+
+
+
+
+
+
+
 //Call Q1
 let human = prompt('am i a human?');
 Q1(human);
@@ -164,5 +226,19 @@ Q6(master);
 //Call Q7
 let loveprog = prompt('do I love programming?');
 Q7(loveprog);
+
+
+// Call Q7
+let num = prompt('Guess a number between 1-10 ?');
+guessGame(num);
+
+
+
+//the place guess Array
+let placeArr = ['wadi rum', 'aqaba', 'italy', 'bali island', 'tarabzon', 'qudes', 'gaza', 'dead sea', 'ajlon', 'amman'];
+let placeAnswer = prompt('What is my favorite place  ?? from (Wadi Rum, Aqaba, Italy, Bali Island, Tarabzon, Qudes, Gaza, Dead Sea, Ajlon, Amman)');
+placeGuess(placeAnswer);
+
+
 
 alert(`you have a score of ${score} /7`);

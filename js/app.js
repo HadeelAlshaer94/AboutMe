@@ -1,9 +1,5 @@
 'use strict';
 
-
-
-alert(" My name is Hadeel Al Shaer, I am 27 years old, I graduated from Amman Arab University with a bachelor's and master's degree, Bachelor's degree in Computer Information Systems (CIS) and Master's degree in Computer Science (Cs) specifically data mining. , I joined this program to develop myself in the  programming, and Always looking for the best.");
-
 let userName = prompt('whats your name?');
 // userName = userName.toLowerCase();
 while (!userName) {
@@ -170,21 +166,21 @@ function guessGame(guessAnswer) {
 // place guess
 let place = '';
 function placeGuess(place) {
-    attemptsLoop:  for (let x = 0; x < 6; x++) {
+    attemptsLoop: for (let x = 0; x < 6; x++) {
         place = prompt('What is my favorite place  ?? from (Wadi Rum, Aqaba, Italy, Bali Island, Tarabzon, Qudes, Gaza, Dead Sea, Ajlon, Amman)');
         place = place.toLocaleLowerCase();
         for (let j = 0; j < placeArr.length; j++) {
             if (place == placeArr[j]) {
                 alert('Great Job..! ');
-                alert('My Places: Wadi Rum, Aqaba, Italy, Bali Island, Tarabzon, Qudes, Gaza, Dead Sea, Ajlon, Amman');
-                // console.log(placeArr);
                 scores++;
                 break attemptsLoop;
             }
             else {
-                alert("ERROR");
+                alert("ERROR Please Re-write place");
                 break;
             }
+
+
         }
 
         if (x == 5) {
@@ -237,7 +233,7 @@ guessGame(num);
 //the place guess Array
 let placeArr = ['wadi rum', 'aqaba', 'italy', 'bali island', 'tarabzon', 'qudes', 'gaza', 'dead sea', 'ajlon', 'amman'];
 let placeAnswer = prompt('What is my favorite place  ?? from (Wadi Rum, Aqaba, Italy, Bali Island, Tarabzon, Qudes, Gaza, Dead Sea, Ajlon, Amman)');
-placeGuess(placeAnswer);
+
 
 
 

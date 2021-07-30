@@ -23,4 +23,10 @@ p {
     font-family: verdana;
     font-size: 2em;
   }
+
+  div{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
   
